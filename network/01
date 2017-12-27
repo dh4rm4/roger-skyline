@@ -1,7 +1,1 @@
-#!/usr/bin/env /bin/bash
-
-if [ `uname` == "Linux" ]; then
-	ls /sys/class/net
-elif [ `uname` == "Darwin" ]; then
-	echo 'Darwin...'
-fi
+ls /sys/class/net
