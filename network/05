@@ -1,0 +1,7 @@
+#!/usr/bin/env /bin/bash
+
+if [ `uname` == "Linux" ]; then
+	nslookup slash16.org
+elif [ `uname` == "Darwin" ]; then
+	echo 'Darwin...'
+fi

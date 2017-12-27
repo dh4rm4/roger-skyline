@@ -1,0 +1,7 @@
+#!/usr/bin/env /bin/bash
+
+if [ `uname` == "Linux" ]; then
+	ip -o -c route | grep default | awk '{print $3}'
+elif [ `uname` == "Darwin" ]; then
+	echo 'Darwin...'
+fi

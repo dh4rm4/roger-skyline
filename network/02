@@ -1,0 +1,10 @@
+#!/usr/bin/env /bin/bash
+
+if [ `uname` == "Linux" ]; then
+	# -c: color
+	# -4: ipv4 interface
+	# -o: one line ouput
+	ip -c -4 -o a | grep -v "127.0.0.1" | awk '{print $2, $4}' | cut -d'/' -f1
+elif [ `uname` == "Darwin" ]; then
+	echo 'Darwin...'
+fi

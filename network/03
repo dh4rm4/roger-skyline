@@ -1,0 +1,7 @@
+#!/usr/bin/env /bin/bash
+
+if [ `uname` == "Linux" ]; then
+
+elif [ `uname` == "Darwin" ]; then
+	echo 'Darwin...'
+fi
